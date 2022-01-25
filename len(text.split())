@@ -1,0 +1,8 @@
+text = input("Ievadi tekstu: ")
+result = len(text.split())
+if result==1:
+  print("Tekstā ir", result, "vārds")
+elif result>1:
+  print("Tekstā ir", result, "vārdi")
+else:
+  print("Teksts nav vārdus")
