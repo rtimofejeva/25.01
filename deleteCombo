@@ -1,10 +1,10 @@
-text = input("Ievadi tekstu: ") #deklarējam funkciju, arguments - text 
-def deleteCombo(text): #pārbaudām, vai ir kaut viena kombo "abc"
-  if text.count("abc")>0: #aizvietojam "abc" ar ""
-    text = text.replace("abc","")
-    print(text)
+text = input("Ievadi tekstu: ") #Lūdzam lietotājam ievadīt tekstu 
+def deleteCombo(text): #deklarējam funkciju, arguments - text 
+  if text.count("abc")>0: #pārbaudām, vai ir kaut viena kombo "abc"
+    text = text.replace("abc","") #aizvietojam "abc" ar ""
+    print(text) #rezultātu printēsim konsolē
   else: #pretēja gadījumā
     text = "Meklējamā kombinācija netika atrasta!" #aizvietojam tekstu ar pazinojumu
-    print(text)
+    print(text) #rezultātu printēsim konsolē
   return text #atgriežam vērtību text 
-deleteCombo(text)
+deleteCombo(text) #izsaucam funkciju
